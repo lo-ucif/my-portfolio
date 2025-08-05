@@ -1,1 +1,2 @@
 # my-portfolio
+This portfolio showcases a collection of projects I have developed, highlighting my skills in software development, data structures, and computer engineering. Through this portfolio, I aim to demonstrate my passion for programming and designing efficient technical solutions. The projects include technologies such as Java, SQL, and database management. These works reflect my commitment to continuous learning and applying theoretical concepts in practical projects.
