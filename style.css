@@ -1,99 +1,115 @@
-
-#content{
-    background-color: #333;
-    color: #333;
-}
-body{
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #333;
-      font-family: "Roboto Condensed", sans-serif;
-}
-.href-a{
-  text-decoration: none; 
-  color: inherit; 
-}
-
-
-#logo{
-  font-size: 25px;
-}
-#navbar{
+#content {
   background-color: #333;
   color: #333;
-    position: sticky;
-  top: 0;
-  z-index: 1000; 
 }
-.nav-link{
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #333;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.href-a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+
+}
+
+
+#logo {
+  font-size: 25px;
+}
+
+#navbar {
+  background-color: #333;
+  color: #333;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-link {
   color: rgb(202, 202, 202);
 }
-#pt-inf{
+
+#pt-inf {
   display: flex;
   /* margin-bottom: 50px; */
 
 }
-#pt-inf1{
+
+#pt-inf1 {
   position: relative;
   top: 100px;
 }
-#button-tel{
+#pt-inf2 {
+  position: relative;
+  top: 60px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+#button-tel {
   background-color:rgb(202, 202, 202);
 }
-#h1{
+
+#h1 {
   font-size: 70px;
-  /* background-color: antiquewhite; */
+
   color: rgb(202, 202, 202);
 }
 
-/* From Uiverse.io by kennyotsu */ 
+/* From Uiverse.io by kennyotsu */
 .card {
-  /* color used to softly clip top and bottom of the .words container */
-  /* --bg-color: #612d2d; */
   background-color: var(--bg-color);
-  /* padding: 1rem 2rem; */
   border-radius: 1.25rem;
   border: 0px;
   position: relative;
   bottom: 20px;
+  margin: 0% auto;
+  font-size: 80%;
 }
+
 .loader {
-  color:rgb(202, 202, 202);;
-  /* font-family: "Poppins", sans-serif; */
+  color: rgb(202, 202, 202);
   font-weight: 500;
   font-size: 30px;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
   height: 50px;
-  /* padding: 10px 10px; */
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  border-radius: 8px;
+  flex-wrap: wrap;
+  justify-content: left;
 }
-.par{
+
+.par {
   color: rgb(202, 202, 202);
   position: relative;
   bottom: 20px;
 }
-.par2{
+
+.par2 {
   color: rgb(202, 202, 202);
 }
 
 .words {
   overflow: hidden;
   position: relative;
+  font-size: 100%;
+  flex-shrink: 1;
+  height: 50px;
 }
+
 .words::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    var(--bg-color) 10%,
-    transparent 30%,
-    transparent 70%,
-    var(--bg-color) 90%
-  );
+  background: linear-gradient(var(--bg-color) 10%,
+      transparent 30%,
+      transparent 70%,
+      var(--bg-color) 90%);
   z-index: 20;
 }
 
@@ -147,21 +163,17 @@ body{
   }
 }
 
-/* From Uiverse.io by david-mohseni */ 
+/* From Uiverse.io by david-mohseni */
 .wrapper {
   display: flex;
   list-style: none;
-  height: 70px;
+  /* height: 70px; */
   width: 100%;
-  /* padding-top: 40px; */
   font-family: "Poppins", sans-serif;
   justify-content: flex-start;
   align-items: center;
-  /* background-color: #e4405f; */
-  position: relative;
-  bottom: 40px;
-  /* right: 50px; */
-  padding-left: 1px;
+  margin-left: 0px;
+  padding-left: 0%;
 }
 
 .wrapper .icon {
@@ -179,7 +191,6 @@ body{
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  /* border: solid 1px #0a66c2; */
 }
 
 .wrapper .tooltip {
@@ -240,13 +251,15 @@ body{
   background: #e4405f;
   color: #fff;
 }
+
 .wrapper .linkedin:hover,
 .wrapper .linkedin:hover .tooltip,
 .wrapper .linkedin:hover .tooltip::before {
-  background: 
-  #084a8b;
+  background:
+    #084a8b;
   color: #fff;
 }
+
 .wrapper .github:hover,
 .wrapper .github:hover .tooltip,
 .wrapper .github:hover .tooltip::before {
@@ -256,12 +269,14 @@ body{
 
 .loader-wrapper {
   position: relative;
+  /* display: flex;
+  justify-content: center; */
   width: 350px;
   height: 350px;
-  margin:50px auto;
+  /* margin:60px auto; */
   /* margin-right: 10px; */
   /* background-color: #e4405f; */
-  
+
 }
 
 .loader2 {
@@ -288,11 +303,12 @@ body{
   height: auto;
 }
 
- img {
+img {
   width: 100%;
   height: auto;
   pointer-events: none;
-  border-radius: 99%;.center-img
+  border-radius: 99%;
+  .center-img
 }
 
 @keyframes spin_51 {
@@ -309,8 +325,9 @@ body{
   position: relative;
   width: 350px;
   height: 350px;
-  margin:50px auto;   
+  margin: 50px auto;
 }
+
 .center-img3 {
   position: absolute;
   top: 50%;
@@ -320,6 +337,7 @@ body{
   width: 100%;
   height: auto;
 }
+
 .loader3 {
   width: 100%;
   height: 100%;
@@ -331,23 +349,33 @@ body{
   left: 0;
   z-index: 1;
 }
-#about-me-txt{
+
+#about-me-txt {
   color: rgb(202, 202, 202);
   font-size: 40px;
   margin: 0px auto;
+  display: flex;
+  justify-content: center;
 }
-#about-me-txt2{
+
+#about-me-txt2 {
   color: rgb(202, 202, 202);
   font-size: 20px;
   font-weight: 500;
   margin: 0px auto;
+  display: flex;
+  justify-content: center;
 }
-#about-me-txt3{
+
+#about-me-txt3 {
   color: rgb(202, 202, 202);
   font-size: 17px;
   margin: 0px auto;
+  display: flex;
+  justify-content: center;
 }
-/* From Uiverse.io by zanina-yassine */ 
+
+/* From Uiverse.io by zanina-yassine */
 .popup {
   position: relative;
   width: 320px;
@@ -405,8 +433,7 @@ body{
   border-radius: 5px;
   outline: none;
   border: 1px solid #e5e5e5;
-  filter: drop-shadow(0px 1px 0px #efefef)
-    drop-shadow(0px 1px 0.5px rgba(239, 239, 239, 0.5));
+  filter: drop-shadow(0px 1px 0px #efefef) drop-shadow(0px 1px 0.5px rgba(239, 239, 239, 0.5));
   transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
 }
 
@@ -435,41 +462,49 @@ body{
   line-height: 15px;
   color: #ffffff;
 }
-#skills-txt1{
+
+#skills-txt1 {
   /* background-color: #e4405f; */
   display: flex;
   justify-content: center;
   color: rgb(202, 202, 202);
 }
-.page{
+
+#contact-txt1 {
+  /* background-color: #e4405f; */
+  display: flex;
+  justify-content: center;
+  color: rgb(202, 202, 202);
+}
+
+.page {
   margin-bottom: 60px;
   /* margin-top: 40px; */
 }
-.card-t{
+
+.card-t {
   color: rgb(202, 202, 202);
   font-size: 26px;
   font-weight: 600;
 }
-.card-t2{
+
+.card-t2 {
   color: rgb(202, 202, 202);
   font-size: 18px;
   font-weight: 600;
 }
 
-.skills{
-  /* background-color: #0a66c2; */
-
-}
-.sk-p{
-    color: rgb(163, 163, 163);
+.sk-p {
+  color: rgb(163, 163, 163);
   /* font-size: 14px;
   font-weight: 600; */
 }
+
 #divemail {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px; 
+  gap: 10px;
   /* background-color: #e4405f; */
   color: rgb(202, 202, 202);
   font-size: 18px;
@@ -488,11 +523,12 @@ body{
 #email-a:hover {
   text-decoration: underline;
 }
+
 #divtel {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px; 
+  gap: 10px;
   /* background-color: #e4405f; */
   color: rgb(202, 202, 202);
   font-size: 18px;
@@ -500,32 +536,32 @@ body{
   padding: 10px;
   border-radius: 8px;
 }
-#divc{
+
+#divc {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px; 
+  gap: 10px;
   /* background-color: #e4405f; */
   color: rgb(202, 202, 202);
   border-radius: 8px;
 }
+
 #about-me {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap; /* يضمن الانتقال لسطر جديد عند الحاجة */
+  flex-wrap: wrap;
   gap: 30px;
   padding: 20px;
 }
 
-/* تحكم في حجم كل عمود */
 #ab1,
 #ab2 {
-  flex: 1 1 45%; /* 45% width تقريبًا على الشاشات الكبيرة */
+  flex: 1 1 45%;
 }
 
-/* لجعل العناصر فوق بعض في الشاشات الصغيرة */
 @media (max-width: 768px) {
   #about-me {
     flex-direction: column;
@@ -538,9 +574,10 @@ body{
     flex: 1 1 100%;
   }
 }
-@media (max-width: 768px) {
+
+@media (max-width: 992px) {
   #h1 {
-    font-size: 28px;
+    font-size: 60px;
     text-align: center;
   }
 
@@ -556,12 +593,20 @@ body{
   }
 
   .card {
-    width: 90% !important;
-    margin-bottom: 20px;
+    /* width: 50% !important; */
+    display: flex;
+    justify-content: center;
+  }
+
+  .loader {
+    display: flex;
+    justify-content: center;
+    margin: 0px auto;
+    padding: 0%;
   }
 
   #about-me-txt {
-    font-size: 24px;
+    font-size: 40px;
     text-align: center;
   }
 
@@ -570,51 +615,43 @@ body{
     text-align: center;
     padding: 0 10px;
   }
-}
-@media (max-width: 768px) {
-  #h1 {
-    font-size: 50px;
+
+  #skills-txt1 {
+    font-size: 40px;
     text-align: center;
   }
 
-  .par {
-    font-size: 14px;
+  #contact-txt1 {
+    font-size: 40px;
     text-align: center;
-    padding: 0 10px;
-  }
-
-  .skills {
-    flex-direction: column !important;
-    align-items: center !important;
   }
 
   .card {
-    width: 90% !important;
-    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
   }
 
-  #about-me-txt {
-    font-size: 24px;
-    text-align: center;
-  }
 
-  #about-me-txt3 {
-    font-size: 14px;
-    text-align: center;
-    padding: 0 10px;
+  .words {
+    font-size: 75%;
   }
+  #pt-inf2 {
+  position: relative;
+  top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.wrapper {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 60px auto ;
+}
+}
+
 img {
   max-width: 100%;
   height: auto;
-}
-@media (max-width: 768px) {
-  .card {
-    padding: 10px;
-  }
-
-  .loader p,
-  .word {
-    font-size: 16px;
-  }
 }
